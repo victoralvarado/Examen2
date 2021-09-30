@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Blog</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,57 +36,64 @@
                     <a class="nav-link" href="#">Blog</a>
                 </li>
             </ul>
-            <button class="btn btn-outline-light facebook my-2 my-sm-0">FACEBOOK</button>
-            <button class="btn btn-outline-light instagram my-2 my-sm-0 mx-2">INSTAGRAM</button>
+            <button class="btn btn-outline-light facebook my-2 my-sm-0"
+                onclick="javascript:window.open('https://www.facebook.com/ea.es/', '_blank')"><i
+                    class="fab fa-facebook-f"></i></button>
+            <button class="btn btn-outline-light instagram my-2 my-sm-0 mx-2"
+                onclick="javascript:window.open('https://www.instagram.com/ea/', '_blank')"><i
+                    class="fab fa-instagram"></i></button>
         </div>
     </nav>
     <div class="container-fluid my-3">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <div class="card text-center mx-auto">
                     <div>
-                        <img src="https://picsum.photos/id/684/600/400?grayscale" width="100%" alt="portada">
+                        <img src="resources/img/ea-feature-content.jpg" width="100%" height="300px" alt="portada">
                     </div>
                     <div class="mx-auto">
-                        <img src="https://picsum.photos/id/514/600/400" width="130px" height="130px"
-                            class="rounded-circle bg-white p-1 image" alt="avatar">
+                        <img src="resources/img/ea.png" width="130px" height="130px"
+                            class="rounded-circle bg-white p-2 image" alt="avatar">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title font-weight-bold">Title</h4>
+                        <h4 class="card-title font-weight-bold">Electronic Arts</h4>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nostrum sit tempora atque
-                            optio sunt voluptatem exercitationem, pariatur provident impedit iste nesciunt voluptas.
+                            Electronic Arts es un líder mundial en el sector del entretenimiento digital interactivo. EA
+                            desarrolla y suministra juegos, contenido y servicios online para consolas conectadas a
+                            Internet, dispositivos móviles y ordenadores. EA cuenta con más de 450 millones de jugadores
+                            registrados en todo el mundo.
                         </p>
-                        <button class="btn btn-primary">Go Somewhere</button>
+                        <button class="btn btn-danger btn-lg">Más Informacion</button>
                     </div>
                 </div>
                 <div class="row my-3">
                     <div class="col">
-                        <div class="card">
+                        <div class="card text-center mx-auto">
                             <div class="card-header">
-                                Quote
+                                <b>Queremos inspirar al mundo a jugar.</b>
                             </div>
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                                        ante.
+                                    <p>
+                                        El mundo necesita jugar más que nunca. Damos buen entretenimiento a jugadores de
+                                        todo el mundo con nuevos títulos, experiencias y formas de conectarse a través
+                                        de los juegos
                                     </p>
-                                    <footer class="blockquote-footer">Someone famous in <cite
-                                            title="Source Title">Source
-                                            Title</cite></footer>
+                                    <footer class="blockquote-footer"><cite title="Source Title">Electronic Arts</cite>
+                                    </footer>
                                 </blockquote>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
-                <div class="card px-2 py-3">
+            <div class="col-lg-9">
+                <div class="card px-2 py-3 my-2">
                     <div class="row no-gutters">
-                        <div class="col-md-1 av">
+                        <div class="col-lg-1 av">
                             <img src="https://picsum.photos/id/1011/64/64" alt="" class="rounded-circle">
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-lg-11">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
@@ -93,20 +105,21 @@
                                     reprehenderit unde! Totam recusandae accusantium vel debitis fugit, ea nulla
                                     nesciunt qui autem neque id ipsa aspernatur eligendi atque?
                                 </p>
-                                <button class="btn btn-outline-primary">Más Información</button>
+                                <button class="btn btn-outline-danger">Más Información</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card px-2 py-3">
+                <div class="card px-2 py-3 my-2">
                     <div class="row no-gutters">
-                        <div class="col-md-1 av">
+                        <div class="col-lg-1 av">
                             <img src="https://picsum.photos/id/1011/64/64" alt="" class="rounded-circle">
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-lg-11">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Fugiat
                                     velit mollitia sed esse aspernatur nemo. Dolorum voluptas eveniet repellat. Vel
                                     vitae sunt magnam corporis molestiae reprehenderit natus aliquid sit?
                                     Necessitatibus?
@@ -115,17 +128,17 @@
                                     reprehenderit unde! Totam recusandae accusantium vel debitis fugit, ea nulla
                                     nesciunt qui autem neque id ipsa aspernatur eligendi atque?
                                 </p>
-                                <button class="btn btn-outline-primary">Más Información</button>
+                                <button class="btn btn-outline-danger">Más Información</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card px-2 py-3">
+                <div class="card px-2 py-3 my-2">
                     <div class="row no-gutters">
-                        <div class="col-md-1 av">
+                        <div class="col-lg-1 av">
                             <img src="https://picsum.photos/id/1011/64/64" alt="" class="rounded-circle">
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-lg-11">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
@@ -137,7 +150,7 @@
                                     reprehenderit unde! Totam recusandae accusantium vel debitis fugit, ea nulla
                                     nesciunt qui autem neque id ipsa aspernatur eligendi atque?
                                 </p>
-                                <button class="btn btn-outline-primary">Más Información</button>
+                                <button class="btn btn-outline-danger">Más Información</button>
                             </div>
                         </div>
                     </div>
